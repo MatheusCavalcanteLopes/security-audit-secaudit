@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/MatheusCavalcanteLopes/security-audit-secaudit/actions/workflows/ci.yml/badge.svg)](https://github.com/MatheusCavalcanteLopes/security-audit-secaudit/actions/workflows/ci.yml)
 
+![secaudit running all three checks in a terminal](docs/demo.gif)
+
 A lightweight CLI security auditor. Three focused checks, one tool, zero
 external scanning services required:
 
