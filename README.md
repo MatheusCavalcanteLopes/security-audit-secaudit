@@ -1,5 +1,7 @@
 # secaudit
 
+[![CI](https://github.com/MatheusCavalcanteLopes/security-audit-secaudit/actions/workflows/ci.yml/badge.svg)](https://github.com/MatheusCavalcanteLopes/security-audit-secaudit/actions/workflows/ci.yml)
+
 A lightweight CLI security auditor. Three focused checks, one tool, zero
 external scanning services required:
 
@@ -71,6 +73,19 @@ HTTP security headers (https://example.com)
     https://example.com does not send a "content-security-policy" header. CSP restricts...
 
 Found 2 issue(s) across 2 check(s).
+```
+
+A well-configured site produces a near-clean report — here's `secaudit headers` against
+`github.com`:
+
+```
+🔒 Security Audit Report
+
+HTTP security headers (https://github.com)
+   LOW  Missing header: permissions-policy
+    https://github.com does not send a "permissions-policy" header. Restricts which browser features (camera, geolocation, etc.) the page may use.
+
+Found 1 issue(s) across 1 check(s).
 ```
 
 ## How each check works
